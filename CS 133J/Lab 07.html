@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Lab 07" content=""/>
+    <title>Lab 07 - Clock</title>
+
+    <style>
+
+        #clockTitle {
+            color: red;
+            font-size: 4em;
+        }
+
+        #longTime {
+            font-size: 2em;
+        }
+
+        #shortTime {
+            font-size: 2em;
+        }
+    
+    
+    </style>
+
+</head>
+
+
+<body>
+    <header></header>
+
+    <main>
+            <p id="clockTitle"></p>
+            <p id="longTime" class="clock"></p>
+            <p id="shortTime"></p>
+                       
+        
+            <script>
+                document.getElementById("clockTitle").innerHTML = "Live Clock";
+
+                function showTime() {
+                    var time = new Date();
+                    //var mil = time.getMilliseconds();
+                    var sec = time.getSeconds();
+                    var min = time.getMinutes();
+                    var hour = time.getHours();
+
+                    var day = time.getDay();
+                    var month = time.getMonth();
+                    var year = time.getFullYear();
+
+                    sec = checkTime(sec);
+                    min = checkTime(min);
+                    
+                    var dayArray = ["Sunday", "Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
+
+                    /*
+                    if (min < 10) {
+                        min = "0" + min;
+                    }
+
+                    if (sec < 10) {
+                        sec = "0" + sec;
+                    }
+                    */
+                    
+                    var short = (hour + ":" + min + ":" + sec);
+                    document.getElementById("shortTime").innerHTML = short;
+
+                    var long = (dayArray[day] + "/" + (month + 1) + "/" + year);
+                    document.getElementById("longTime").innerHTML = long;             
+
+
+                    setInterval(showTime, 1000);
+                }
+
+                function checkTime(t) {
+                    if (t < 10) {
+                        t = "0" + t;
+                    }
+                    return t;
+                }
+
+               showTime();
+            </script>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

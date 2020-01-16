@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="" content=""/>
+    <title>Lab 02</title>
+
+</head>
+
+
+<body>
+    <header></header>
+
+    <main>
+        <pre>
+            <script>
+                var gradeArray = [88, 75, 40, 65, 95.6]
+
+                document.writeln("Grade Conditions: \n");
+                document.writeln("70+      ::  Passed");
+                document.writeln("60 < 70  ::  Conditional");
+                document.writeln("< 60     ::  Failed");
+                document.writeln("\n\n");
+
+
+                for (i = 0; i < gradeArray.length; i++) {
+                    document.write("Exam #" + (i+1) + "\nScore: " + gradeArray[i]);
+                    
+                    if (gradeArray[i] >= 70) {
+                        document.write(" - Passed\n");
+
+                        if (gradeArray[i] > 90) {
+                        document.writeln("Grade Received : A");
+                        }
+                        else if (gradeArray[i] > 80) {
+                        document.writeln("Grade Received : B");
+                        }
+                        else {
+                        document.writeln("Grade Received : C");
+                        }
+                    }
+                    else if (gradeArray[i] > 60) {
+                        document.write(" - Conditional\n");
+                        document.writeln("Grade Received : D")
+                    }
+                    else {
+                        document.write(" - Failed\n");
+                        document.writeln("Grade Received : F");
+                    }
+
+                    document.write("\n");
+                }
+            </script>
+        </pre>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

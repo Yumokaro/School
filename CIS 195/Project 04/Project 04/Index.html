@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="Project 04" content="Table" />
+    <title>Project 04</title>
+
+    <!-- CSS code Project 04 -->
+    <!-- This file is for HTML Attributes  -->
+    
+    <div>
+        <style>
+            h1, h2 {
+                color: blue;
+            }
+
+            .mytable {
+                border: 5px solid green;
+                padding: 15px;
+            }
+
+            .bodytd {
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-left: solid black;
+                border-right: solid black;
+                border-top: solid black;
+                border-bottom: solid black;
+            }
+
+            .foot {
+                text-align: center;
+                font-size: 30px;
+                background-color: lightsalmon;
+            }
+
+            img {
+                margin-left: 45px;
+                margin-right: 45px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+            th {
+                margin: 5px;
+                border: solid black;
+                background-color: lightblue;
+                font-weight: bold;
+            }
+
+            td {
+                font-style: italic;
+                border: 3px solid green;
+                padding: 10px;
+            }
+
+            a:active {
+                color: black;
+                background-color: white;
+            }
+
+            a:visited {
+                color: brown;
+                background-color: orange;
+                text-decoration: underline dotted;
+                text-decoration-color: red;
+            }
+
+            a:hover {
+                color: green;
+                background-color: yellow;
+                text-decoration: overline underline wavy;
+                text-decoration-color: blue;
+            }
+        </style>
+    </div>
+</head>
+
+<body>
+    <div role="banner">
+        <h1>Header 01 is blue</h1>
+        <h2>Header 02 is blue</h2>
+    </div>
+
+    <div role="main">
+        <table class="mytable">
+            <caption style="margin: 5px; border: dashed green; padding: 5px; width: 250px;">
+                Table is Here
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>Plant #</th>
+                    <th>Price</th>
+                    <th>Location</th>
+                    <th>Image</th>
+                    <th>link</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="bodytd">A</td>
+                    <td class="bodytd">$100</td>
+                    <td class="bodytd">23</td>
+                    <td class="bodytd"> <img src="plants/1.jpg" width="150" />  </td>
+                    <td class="bodytd"> <a href="https://www.ford.com" target="_blank"</a>Ford</td>
+                </tr>
+                <tr>
+                    <td class="bodytd">B</td>
+                    <td class="bodytd">$50</td>
+                    <td class="bodytd">17a</td>
+                    <td class="bodytd"> <img src="plants/2.jpg" width="150" />  </td>
+                    <td class="bodytd"> <a href="https://www.google.com" target="_blank"</a>Google</td>
+                </tr>
+                <tr>
+                    <td class="bodytd">C</td>
+                    <td class="bodytd">$50</td>
+                    <td class="bodytd">68</td>
+                    <td class="bodytd"> <img src="plants/3.jpg" width="150" />  </td>
+                    <td class="bodytd"> <a href="https://www.verizon.com" target="_blank"</a>Verizon</td>
+                </tr>
+                <tr>
+                    <td class="bodytd">D</td>
+                    <td class="bodytd">$50</td>
+                    <td class="bodytd">4</td>
+                    <td class="bodytd"> <img src="plants/4.jpg" width="150" />  </td>
+                    <td class="bodytd"> <a href="https://www.microsoft.com" target="_blank"</a>Microsoft</td>
+                </tr>
+                <tr>
+                    <td class="bodytd">E</td>
+                    <td class="bodytd">$50</td>
+                    <td class="bodytd">5b</td>
+                    <td class="bodytd"> <img src="plants/5.jpg" width="150" />  </td>
+                    <td class="bodytd"> <a href="https://www.wikipedia.org" target="_blank"</a>Wikipedia</td>
+                </tr>
+            </tbody>
+
+            <tfoot class="foot">
+                <tr>
+                    <td style="text-align:center; border:3px solid brown;">Total:</td>
+                    <td style="text-align:center; border:3px solid brown;">$300</td>
+                    <td style="text-align:center; border:3px solid brown;">-----</td>
+                    <td style="text-align:center; border:3px solid brown;">Image</td>
+                    <td style="text-align:center; border:3px solid brown;">Link</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <aside role="contentinfo">
+        Copyright &copy2019, no touch
+    </aside>
+</body>
+
+</html>

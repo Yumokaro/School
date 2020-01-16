@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="" content=""/>
+    <title>Lab 05</title>
+
+    <style>
+        #paragraph {
+            color: blue;
+            font-weight: bold;
+            font-size: 5em;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header></header>
+
+    <main>
+        <!--  Buttons  -->
+        <form id="englishButton">
+            <input type="button" value="English" onclick="english()">
+        </form>
+        
+        <form id="spanishButton">
+            <input type="button" value="Spanish" onclick="spanish()">
+        </form>
+
+        <form id="germanButton">
+            <input type="button" value="German" onclick="german()">
+        </form>
+
+        <form id="frenchButton">
+            <input type="button" value="French" onclick="french()">
+        </form>
+
+
+        <!--  JavaScript Functions  -->
+        <p id="paragraph"></p>
+        <pre>
+            <script>         
+            
+                function english() {
+                    document.getElementById("paragraph").innerHTML = "Hey!!";
+                    alert("Hey!!");
+                }
+                
+                function spanish() {
+                    document.getElementById("paragraph").innerHTML = "Hola!!";
+                    alert("Hola!!");
+                }
+                function german() {
+                    document.getElementById("paragraph").innerHTML = "Hallo!!";
+                    alert("Hallo!!");
+                }
+                function french() {
+                    document.getElementById("paragraph").innerHTML = "Bonjour!!";
+                    alert("Bonjour!!");
+                }                
+            </script>
+        </pre>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

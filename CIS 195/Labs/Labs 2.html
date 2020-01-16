@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* DO NOT CHANGE THESE STYLES*/
+
+/* BOX MODEL OPTIONS */
+.parent {
+  background: lightgrey;
+  width: 700px;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* BOX MODEL OPTIONS */
+.child1 {
+  background: indianred;
+  width: 200px;
+  height: 150px;
+}
+.child2 {
+  background: blue;
+  color: gold;
+  width: 250px;
+  height: 200px;
+}
+.child3 {
+  background: lightgreen;
+  color: brown;
+  width: 250px;
+  height: auto;
+}
+
+/* FLOAT OPTIONS */
+.left {
+  float:left;
+}
+.right {
+  float:right;
+}
+.inherit {
+  float:inherit;
+}
+.clear {
+  clear:both;
+}
+
+/* OVERFLOW OPTIONS */
+.over-auto {
+  overflow: auto;
+}
+.over-inherit {
+  overflow: inherit;
+}
+.over-scroll {
+  overflow: scroll;
+}
+
+</style>
+</head>
+<body>
+<div class="parent">
+
+  <!-- ADD CLASSES BELOW FOR BOX 1-->
+  <div class="child1 right over-inherit">
+    <p>
+    1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <!-- ADD CLASSES BELOW FOR BOX 2 -->
+  <div class="child2 left over-scroll">
+    <p>
+    2> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    </p>
+  </div>
+  <!-- ADD CLASSES BELOW FOR BOX 3 -->
+  <div class="child3 left">
+    <p>
+    3> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</div>
+</body>
+</html>

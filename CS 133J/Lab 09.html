@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="" content=""/>
+    <title></title>
+
+</head>
+
+
+<body>
+    <header></header>
+
+    <main>
+        <pre>
+            <script>
+                function validateForm() {
+                    var radio = document.getElementById("radio").checked;
+                    if (radio == false) {
+                        alert("Select a cake size");
+                        return false;
+                    }
+                    var filling = document.orderForm.filling.value;
+                    if (filling == -1) {
+                        alert("Select a filling");
+                        return false;
+                    }                    
+                    var firstName = document.forms["orderForm"]["firstName"].value;
+                    if (firstName == "") {
+                        alert("First name must be filled out");
+                        return false;
+                    }
+                    var lastName = document.forms["orderForm"]["lastName"].value;
+                    if (lastName == "") {
+                        alert("Last name must be filled out");
+                        return false;
+                    }
+                    var phoneNumber = document.forms["orderForm"]["phoneNumber"].value;
+                    if (phoneNumber == "") {
+                        alert("Phone number must be filled out");
+                        return false;
+                    }                    
+                }            
+            </script>
+        </pre>
+
+        <form name="orderForm" action="success.html" onsubmit="return validateForm()">
+            <fieldset id="cakeBorder">
+            
+                <strong>Size of Cake</strong></br></br>
+
+                <input type="radio" name="radio" id="radio" value="Round 6">Round 6" </br>
+                <input type="radio" name="radio" id="radio" value="Round 8">Round 8" </br>
+                <input type="radio" name="radio" id="radio" value="Round 10">Round 10" </br>
+                <input type="radio" name="radio" id="radio" value="Round 12">Round 12" </br>
+
+                <strong>Filling</strong>
+                <select id="filling">
+                    <option value="-1">Filling</option>
+                    <option>Lemon</option>
+                    <option>Raspberry</option>
+                    <option>Mint</option>
+                    <option>Chocolate</option>
+                    <option>Apricot</option>
+                    <option>Strawberry</option>
+                    <option>Vanilla Cream</option>
+                </select>
+
+            </br>
+
+                <strong>Include Candles</strong>
+                <input type="checkbox" name="candles" id="candles">
+
+            </br>
+
+                <strong>Include Inscription</strong>
+                <input type="checkbox" name="inscriptionCheckBox" id="inscriptionCheckBox">
+                <label>
+                    <input type="text" value="Enter Inscription" name="inscriptionText" id="inscriptionText">
+                </label>
+
+            </fieldset>
+
+        </br>
+        </br>
+
+            <fieldset id="contactBorder">
+
+                <label>First Name</br>
+                    <input type="text" value="" name="firstName" id="firstName">
+                </label>
+
+            </br>
+
+                <label>Last Name</br>
+                    <input type="text" value="" name="lastName" id="lastName">
+                </label>
+
+            </br>
+
+                <label>Phone Number</br>
+                    <input type="text" value="" name="phoneNumber" id="phoneNumber">
+                </label>
+    
+            </fieldset>
+
+        </br>
+        </br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

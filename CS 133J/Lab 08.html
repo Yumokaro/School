@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="" content=""/>
+    <title></title>
+
+</head>
+
+
+<body>
+    <header></header>
+
+    <main>
+        <p>
+            <a href="javascript:openWindow()">Link to Open</a> </br></br>
+            <a href="javascript:closeWindow()">Link to Close</a>
+        </p>
+        
+        <pre>
+            <script>
+                var myWindow;
+            
+                function openWindow() {
+                    myWindow = window.open("https://www.petfinder.com/dog-breeds/", "_blank", "width = 600, height = 600");
+                }
+
+                function closeWindow() {
+                    if (myWindow.closed == false) {
+                        myWindow.close();
+                    }
+                    else {
+                        alert("This window has been closed already.");
+                    }
+                    //myWindow.close();
+                }
+            </script>
+        </pre>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="" content=""/>
+    <title>Lab 03</title>
+
+</head>
+
+
+<body>
+    <header></header>
+
+    <main>
+        <div id = "mainParagraph"></div>
+        <pre>
+            <script>
+                var moneyInvested, interestRate, durationInMonths, startMonth;
+                
+                // Acquire Input From Users For Variables
+                moneyInvested = prompt("Enter in how much money to invest");
+                interestRate = prompt("Enter your expected monthly interest rate is (%)");
+                startMonth = prompt("Enter start month number [1-12]");
+                durationInMonths = prompt("Enter duration of investment (months)");
+                
+                moneyInvested = parseFloat(moneyInvested).toFixed(2);
+                interestRate = parseFloat(interestRate).toFixed(2);
+                startMonth = parseInt(startMonth);
+                durationInMonths = parseInt(durationInMonths);
+
+                document.writeln("<br>");
+                document.writeln("Initial Investment --- $" + parseFloat(moneyInvested));                
+                document.writeln("Monthly Interest Rate --- " + interestRate + "%");               
+                document.writeln("Duration in Months --- " + parseInt(durationInMonths + "<br>"));
+                
+                // Could list another for-loop like below to list name
+                document.writeln("Start Month: " + startMonth);
+
+                // What month is it?
+                for (i = (startMonth + 1); i <= (startMonth + durationInMonths); i++) {
+                    if ((i%12) == 1) {
+                    document.write("End of January ")
+                    }
+                    else if ((i%12) == 2) {
+                        document.write("End of February ")
+                    }
+                    else if ((i%12) == 3) {
+                        document.write("End of March ")
+                    }
+                    else if ((i%12) == 4) {
+                        document.write("End of April ")
+                    }
+                    else if ((i%12) == 5) {
+                        document.write("End of May ")
+                    }
+                    else if ((i%12) == 6) {
+                        document.write("End of June ")
+                    }
+                    else if ((i%12) == 7) {
+                        document.write("End of July ")
+                    }
+                    else if ((i%12) == 8) {
+                        document.write("End of August ")
+                    }
+                    else if ((i%12) == 9) {
+                        document.write("End of September ")
+                    }
+                    else if ((i%12) == 10) {
+                        document.write("End of October ")
+                    }
+                    else if ((i%12) == 11) {
+                        document.write("End of November ")
+                    }
+                    else if ((i%12) == 0) {
+                        document.write("End of December ")
+                    }
+                    
+                    // Apply Interest Rate and round to two decimals
+                    moneyInvested = (moneyInvested * (1 + interestRate/100)).toFixed(2);
+
+                    document.writeln("Year " + Math.ceil(i/12) + " ");                    
+                    document.writeln("\tTotal: $" + moneyInvested + "<br>");
+                }                              
+
+                document.writeln("<br><br> Total: $" + moneyInvested);
+            </script>
+        </pre>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

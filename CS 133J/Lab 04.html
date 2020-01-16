@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="" content=""/>
+    <title>Lab 04</title>
+
+    <style>    
+        #paragraph {
+            color: red;
+            font-weight: bold;
+            font-size: 10em;
+            text-align: center;
+        }        
+    </style>
+</head>
+
+
+<body>
+    <header>
+            <form id="formButton">
+                <input type="button" value="CHECK YOUR GRADE" onclick="checkGrade()">
+            </form>
+    </header>
+
+    <main>
+        <p id="paragraph"></p>
+        <pre>
+            <script>
+                                             
+                function checkGrade() {
+
+                    var grade = prompt("Enter in your letter grade here: ");
+
+                    grade = grade.toLowerCase();
+                    
+                    switch (grade) {
+                    case "a":
+                    document.getElementById("paragraph").innerHTML = "Awesome!!";
+                    break
+
+                    case "b":
+                    document.getElementById("paragraph").innerHTML = "Mostly <br>Awesome";
+                    break
+
+                    case "c":
+                    document.getElementById("paragraph").innerHTML = "Good <br>Enough";
+                    break
+
+                    case "d":
+                    document.getElementById("paragraph").innerHTML =  "Mediocre";
+                    break
+
+                    case "f":
+                    document.getElementById("paragraph").innerHTML = "Epic <br>Failure";
+                    break
+
+                    default:
+                    document.getElementById("paragraph").innerHTML = "That's not <br>a <br>letter grade";
+                    }
+                }         
+            </script>            
+        </pre>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

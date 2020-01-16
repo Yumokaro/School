@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="" content=""/>
+    <title></title>
+
+</head>
+
+
+<body>
+    <header></header>
+
+    <main>
+        
+        <script>
+            
+            function gender() {
+                if (document.form01.male.checked == true && document.form01.female.checked == false) {
+                    alert("male");
+                }
+                else if (document.form01.female.checked == true  && document.form01.male.checked == false) {
+                    alert("female");
+                }
+                else {
+                    alert("select a gender");
+                }
+            }
+            
+            
+            function gender02() {                 
+
+                if (document.getElementById("r1").form02.r1.checked) {
+                    alert("male");
+                    return true;
+                }
+                else if (document.getElementById("r2").form02.r2.checked) {
+                    alert("female");
+                }
+                else {
+                    alert("select a gender");
+                }
+
+
+            }
+            
+        
+        </script>
+
+
+
+
+        <form name="form01">
+            
+            <input type="checkbox" name="male" > Male </br>
+            <input type="checkbox" name="female" > Female </br>
+            
+            <input type="button" value="check"  name="button01" onclick="gender()">
+            
+        </form>
+
+        </br>
+        </br>
+        ++++++++++++++++++++++++++++++++++ </br>
+        ++++++++++++++++++++++++++++++++++ </br>
+        ++++++++++++++++++++++++++++++++++ </br>
+        </br>
+        </br>
+
+
+        <form name="form02" onsubmit="gender02()">
+            
+            <input type="radio" id="r1" name="radio" value="male"> Male </br>
+            <input type="radio" id="r2" name="radio" value="female"> Female </br>
+
+            
+            <input type="button" value="check"  name="button02" onclick="gender02()">
+            
+            
+        </form>
+        
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

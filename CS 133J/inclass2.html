@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="" content=""/>
+    <title></title>
+
+</head>
+
+
+<body>
+    <header></header>
+    <main>        
+        <script>            
+            function checkName() {
+                if (document.getElementById("fname").value="null") {
+                    alert("field is empty");
+                    document.getElementById("border").style.borderColor="red";
+                    return false;
+                }
+            }
+        </script>
+
+        <form method="POST" action="#" onsubmit="checkName()">
+            <fieldset id="border">
+                <label>
+                    First Name:
+                    <input type="text" value="" name="fname" id="fname">
+
+                </label>
+
+                </br>
+
+                <input type="submit" name="submitButton" id="submitButton" value="Submit Name">
+        </fieldset>
+        </form>       
+    </main>
+    <footer></footer>
+</body>
+
+</html>
