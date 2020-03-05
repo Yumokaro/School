@@ -1,25 +1,13 @@
-/*
-
-CSS Style Sheet
--= Order =-
-1)  General
-2)  Home Page
-3)  Additional Page
-4)  About Page
-5)  Footer
-
-*/
-
 /* Menu */
 .menu {
     list-style-type: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #1b262c;
     padding: 20px 10px;
 }
 .menu a {
     float: left;
-    color: black;
+    color: ghostwhite;
     font-size: 40px;
     text-align: center;
     text-decoration: none;
@@ -41,4 +29,8 @@ CSS Style Sheet
 .menu li {
     display: block;
     float: left;
+    padding: 0px;
+}
+.menu li a:hover {
+    background-color: #0f4c75;
 }
