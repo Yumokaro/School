@@ -13,3 +13,31 @@ CSS Style Sheet
 /* General */
 
 /* Classes */
+
+.pageBanner li {
+    list-style-type: none;
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgrey;
+    float: left;
+}
+
+.pageBanner li a {
+    display: block;
+    color: rgba(13, 53, 228);
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.page_title_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid;
+    background-color: lightgray;
+}
