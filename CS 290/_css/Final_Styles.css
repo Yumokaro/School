@@ -12,12 +12,33 @@ CSS Style Sheet
 
 /* Menu */
 .menu {
+    list-style-type: none;
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 20px 10px;
 }
-
-.menu a.logo {
+.menu a {
+    float: left;
+    color: black;
     font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.menu a.logo {
     font-weight: bold;
+}
+.menu .main_sections {
+    list-style-type: none;
+    float: right;
+}
+.menu ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.menu li {
+    display: block;
+    float: left;
 }
