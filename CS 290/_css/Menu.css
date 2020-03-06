@@ -1,0 +1,38 @@
+/* Menu */
+.menu {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 5px 0;
+}
+.menu a {
+    float: left;
+    color: ghostwhite;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.menu a.logo {
+    font-weight: bold;
+}
+.menu .main_sections {
+    list-style-type: none;
+    float: right;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu li {
+    display: block;
+    float: left;
+    padding: 0;
+}
+.menu li a:hover {
+    background-color: #0f4c75;
+}
+.menu a:active {
+
+}
