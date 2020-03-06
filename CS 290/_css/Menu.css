@@ -1,4 +1,4 @@
-/* Menu */
+/* Main Menu */
 .menu {
     list-style-type: none;
     overflow: hidden;
@@ -33,6 +33,13 @@
 .menu li a:hover {
     background-color: #0f4c75;
 }
-.menu a:active {
+.menu li a:active {
+    background-color: #777777;
+    color: ghostwhite;
+}
 
+/* Side Navigation */
+.nav_bar_hamburger {
+    font-size:35px;
+    cursor: pointer;
 }

@@ -4,4 +4,12 @@ body {
 
 .horizontal_rule {
     border-top: 2px solid #0f4c75;
+    width: 100%;
+}
+
+body {
+    font-family: sans-serif;
+}
+p {
+    color: #3282b8;
 }
