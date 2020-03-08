@@ -8,8 +8,15 @@ body {
 }
 
 body {
+    top: auto;
     font-family: sans-serif;
 }
+
+.main_Body {
+    clear: both;
+    margin: 5px 10%;
+}
+
 p {
     color: #3282b8;
 }
