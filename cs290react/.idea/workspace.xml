@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a27512b3-8bb2-401e-911a-f34a46f30a41" name="Default Changelist" comment="initial">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/cs290react.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+    <list default="true" id="a27512b3-8bb2-401e-911a-f34a46f30a41" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +13,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="working_branch" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="Yumokaro" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="School" />
+  </component>
   <component name="ProjectId" id="1Yx8fAigA4CO0mESYZ5c1PnsSaD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -75,8 +62,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583872985463</updated>
-      <workItem from="1583872987327" duration="631000" />
+      <workItem from="1583872987327" duration="1192000" />
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1583873857944</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583873857944</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,9 +86,53 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="696" y="213" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1583873839918" />
-    <state x="727" y="63" key="CommitChangelistDialog2" timestamp="1583873821973">
+    <state x="727" y="63" key="CommitChangelistDialog2" timestamp="1583873857155">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="727" y="63" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583873821973" />
+    <state x="727" y="63" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583873857155" />
+    <state x="900" y="416" key="Github.CreatePullRequestDialog" timestamp="1583874263842">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="900" y="416" key="Github.CreatePullRequestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583874263842" />
+    <state width="1362" height="245" key="GridCell.Tab.0.bottom" timestamp="1583874320994">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1362" height="245" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583874320994" />
+    <state width="1362" height="245" key="GridCell.Tab.0.center" timestamp="1583874320994">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1362" height="245" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583874320994" />
+    <state width="1362" height="245" key="GridCell.Tab.0.left" timestamp="1583874320994">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1362" height="245" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583874320994" />
+    <state width="1362" height="245" key="GridCell.Tab.0.right" timestamp="1583874320994">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1362" height="245" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583874320994" />
+    <state x="684" y="290" key="IDE.errors.dialog" timestamp="1583874366473">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="684" y="290" key="IDE.errors.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583874366473" />
+    <state x="808" y="262" key="MultipleFileMergeDialog" timestamp="1583874065241">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="808" y="262" key="MultipleFileMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583874065241" />
+    <state x="696" y="284" key="Vcs.Push.Dialog.v2" timestamp="1583874169334">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="696" y="284" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1583874169334" />
+    <state x="504" y="155" width="1200" height="800" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1583874295384">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="504" y="155" width="1200" height="800" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583874295384" />
+    <state x="893" y="334" key="git4idea.merge.GitMergeDialog" timestamp="1583874242410">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="893" y="334" key="git4idea.merge.GitMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583874242410" />
+    <state x="841" y="328" key="git4idea.merge.GitPullDialog" timestamp="1583874128613">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="841" y="328" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583874128613" />
   </component>
 </project>
