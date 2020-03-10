@@ -1,0 +1,33 @@
+body {
+    background-color: #1b262c;
+    top: auto;
+    font-family: sans-serif;
+}
+
+header {
+    position: sticky;
+}
+
+.horizontal_rule_top {
+    border-top: 2px solid #0f4c75;
+    width: 100%;
+}
+
+.main_Body {
+    clear: both;
+    margin: 5px 10%;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    color: ghostwhite;
+}
+
+h2 {
+    color: #3282b8;
+}
+p {
+    color: #bbe1fa;
+    text-align: justify;
+}

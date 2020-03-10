@@ -5,6 +5,9 @@ import {
 } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
+import Linux from "./pages/Linux";
+import Windows from "./pages/Windows";
+import NavBar from "./navbar";
 
 import './App.css';
 
@@ -13,7 +16,12 @@ class App extends Component {
         return (
             <Router>
                 <div className="App">
-                    <Route  path="/" component={HomePage} exact />
+                    <NavBar/>
+                    <div className="pageBody">
+                        <Route path="/" component={HomePage} exact />
+                        <Route path="/Linux" component={Linux} />
+                        <Route path="/Windows" component={Windows} />
+                    </div>
                 </div>
             </Router>
         );
