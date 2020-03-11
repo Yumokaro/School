@@ -14,7 +14,8 @@ import NotFoundPage from "./pages/PageNotFound";
 
 /*import './App.css';*/
 import './_css/Menu.css';
-import './_css/Page.css'
+import './_css/Page.css';
+import './_css/ShoppingList.css';
 
 
 class App extends Component {
