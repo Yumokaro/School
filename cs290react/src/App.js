@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import Linux from "./pages/Linux";
 import Windows from "./pages/Windows";
 import NavBar from "./navbar";
+import ShoppingList from "./pages/ShoppingList";
 import NotFoundPage from "./pages/PageNotFound";
 
 /*import './App.css';*/
@@ -30,6 +31,7 @@ class App extends Component {
                             <Route path="/" component={HomePage} exact />
                             <Route path="/Linux" component={Linux} />
                             <Route path="/Windows" component={Windows} />
+                            <Route path="/ShoppingList" component={ShoppingList}
 
                             /* Not found page goes last */
                             <Route component={NotFoundPage} />
