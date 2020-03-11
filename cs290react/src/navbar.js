@@ -14,6 +14,9 @@ const NavBar = () => (
                 <li>
                     <Link to="/Windows">Windows</Link>
                 </li>
+                <li>
+                    <Link to="/ShoppingList">Shopping List</Link>
+                </li>
             </ul>
         </div>
     </nav>

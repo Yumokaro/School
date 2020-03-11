@@ -23,7 +23,6 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <NavBar/>
-
                     <div className="horizontal_rule_top"></div>
 
                     <div className="pageBody">
@@ -31,14 +30,11 @@ class App extends Component {
                             <Route path="/" component={HomePage} exact />
                             <Route path="/Linux" component={Linux} />
                             <Route path="/Windows" component={Windows} />
-                            <Route path="/ShoppingList" component={ShoppingList}
+                            <Route path="/ShoppingList" component={ShoppingList} />
 
-                            /* Not found page goes last */
                             <Route component={NotFoundPage} />
                         </Switch>
                     </div>
-
-
                 </div>
             </Router>
         );
