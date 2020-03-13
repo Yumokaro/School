@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from 'react';
 
 const ShoppingList = () => (
     <>
@@ -6,11 +6,10 @@ const ShoppingList = () => (
 
         <div>
             <form className="shopping_form">
-                <input/>
+                <input />
                 <button type="submit">Add Item</button>
             </form>
         </div>
-
     </>
 );
 export default ShoppingList;
