@@ -18,9 +18,19 @@ header {
     margin: 5px 10%;
 }
 
-.main_Body img {
+.main_Body .logos img {
     width: 100px;
     padding: 20px;
+}
+
+.main_Body .update img {
+    max-width: 800px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.pageBody code {
+    color: red !important;
 }
 
 h1 {

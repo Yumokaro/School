@@ -1,9 +1,13 @@
 import React from "react";
-import "../_images/_linux_OS/ubuntu-orange.gif";
+
+/* images */
 import ubuntu_logo from "../_images/_linux_OS/ubuntu-orange.gif";
 import mint_logo from "../_images/_linux_OS/Linux_Mint_logo_without_wordmark.jpg";
 import manjaro_logo from "../_images/_linux_OS/Manjaro-logo.jpg";
 import arch_logo from "../_images/_linux_OS/Archlinux-icon-crystal-64.jpg";
+
+import update from "../_images/_linux_update_system/update.png";
+import upgrade from "../_images/_linux_update_system/upgrade.png";
 
 const Linux = () => (
     <>
@@ -23,7 +27,27 @@ const Linux = () => (
 
             <h2 id="Updating Linux">Updating Linux</h2>
 
-            <p>Updating linux is fairly similar across systems; however, not always the same.  Here will be a demonstration of updating a system             using Ubuntu.</p>
+            <p>Updating linux is fairly similar across systems; however, not always the same.  Here will be a demonstration of updating a system             in Ubuntu.</p>
+
+
+            <div className="update">
+                <img src={update}/>
+
+                <p>Update your system with the command: </p>
+
+                    <code>
+                        <p>sudo apt-get update</p>
+                    </code>
+
+
+                <img src={upgrade}/>
+                <p>Update your system with the command: </p>
+                <pre>
+                    <code>
+                        <p>sudo apt-get update</p>
+                    </code>
+                </pre>
+            </div>
 
 
         </div>
