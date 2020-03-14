@@ -1,16 +1,20 @@
 import React, { Component } from "react";
-import TodoItems from "./TodoItems";
+import List_Grocery from "./_lists/List_Grocery";
 
-class TodoList extends Component {
+class Grocery_List extends Component {
+
+    /* Always use super in constructor */
     constructor(props) {
         super(props);
 
+        /* List Array */
         this.state = {
             items: []
         };
 
         this.addItem = this.addItem.bind(this);
     }
+
     addItem(e) {
         /* If input field is not blank */
         if (this._inputElement.value !== "") {
@@ -30,26 +34,27 @@ class TodoList extends Component {
             /* reset input textfield */
             this._inputElement.value = "";
         }
-        console.log(this.state.items);
+
         /* prevent page reloading from clearing out entries */
         e.preventDefault();
     }
 
     render() {
         return (
-            <div className="todoListMain">
-                <div className="header">
+            <div className="shopping_form">
                     <form onSubmit={this.addItem}>
                         <input ref={(a) => this._inputElement = a}
-                               placeholder="enter task">
+                               placeholder="add item to list">
                         </input>
-                        <button type="submit">add</button>
+                        <button type="submit">Submit</button>
                     </form>
+
+                <div id="Sform">
+                    <List_Grocery entries={this.state.items}/>
                 </div>
-                <TodoItems entries={this.state.items}/>
             </div>
         );
     }
 }
 
-export default TodoList;
+export default Grocery_List;

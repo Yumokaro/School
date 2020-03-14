@@ -31,3 +31,7 @@ p {
     color: #bbe1fa;
     text-align: justify;
 }
+
+p li {
+    list-style-type: decimal-leading-zero;
+}

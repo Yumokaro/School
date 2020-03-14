@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class List_Grocery extends Component {
-    /* Return item using unique key */
+    /* Pull and Return item using unique key */
     createTasks(item) {
         return <li key={item.key}>{item.text}</li>
     }
@@ -11,11 +11,11 @@ class List_Grocery extends Component {
         var list_Items = grocery_Item.map(this.createTasks);
 
         return (
-            <ul className="theList">
+            <ul>
                 {list_Items}
             </ul>
         );
     }
-};
+}
 
 export default List_Grocery;

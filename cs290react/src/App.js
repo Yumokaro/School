@@ -10,7 +10,6 @@ import Linux from "./pages/Linux";
 import Windows from "./pages/Windows";
 import NavBar from "./navbar";
 import ShoppingList from "./pages/ShoppingList";
-import TodoList from "./pages/ToDoList";
 import NotFoundPage from "./pages/PageNotFound";
 
 /*import './App.css';*/
@@ -34,7 +33,6 @@ class App extends Component {
                             <Route path="/Linux" component={Linux} />
                             <Route path="/Windows" component={Windows} />
                             <Route path="/ShoppingList" component={ShoppingList} />
-                            <Route path="/ToDoList" component={TodoList} />
 
                             <Route component={NotFoundPage} />
                         </Switch>
