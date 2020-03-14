@@ -18,6 +18,11 @@ header {
     margin: 5px 10%;
 }
 
+.main_Body img {
+    width: 100px;
+    padding: 20px;
+}
+
 h1 {
     font-size: 48px;
     text-align: center;
@@ -26,6 +31,7 @@ h1 {
 
 h2 {
     color: #3282b8;
+    padding-top: 50px;
 }
 p {
     color: #bbe1fa;
