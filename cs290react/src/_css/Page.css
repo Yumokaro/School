@@ -29,7 +29,7 @@ header {
     padding-bottom: 30px;
 }
 
-.pageBody code {
+.main_Body .update code p {
     color: red !important;
 }
 

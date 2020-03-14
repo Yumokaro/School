@@ -30,15 +30,15 @@ const Linux = () => (
             <p>Updating linux is fairly similar across systems; however, not always the same.  Here will be a demonstration of updating a system             in Ubuntu.</p>
 
 
-            <div className="update">
+            <div id="code" className="update">
                 <img src={update}/>
 
                 <p>Update your system with the command: </p>
-
+                <pre>
                     <code>
                         <p>sudo apt-get update</p>
                     </code>
-
+                </pre>
 
                 <img src={upgrade}/>
                 <p>Update your system with the command: </p>
