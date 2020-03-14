@@ -41,7 +41,7 @@ class Grocery_List extends Component {
 
     render() {
         return (
-            <div className="shopping_form">
+            <div id="listy" className="shopping_form">
                     <form onSubmit={this.addItem}>
                         <input ref={(a) => this._inputElement = a}
                                placeholder="add item to list">
@@ -49,7 +49,7 @@ class Grocery_List extends Component {
                         <button type="submit">Submit</button>
                     </form>
 
-                <div id="Sform">
+                <div>
                     <List_Grocery entries={this.state.items}/>
                 </div>
             </div>
