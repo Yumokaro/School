@@ -39,17 +39,11 @@
 }
 
 /* Side Navigation */
-.nav_bar_hamburger {
-    font-size:35px;
-    cursor: pointer;
-    float: left;
-}
-
 .side_nav_bar {
     height: 100%;
-    width: 0;
+    width: 20%;
     position: fixed;
-    top: initial;
+    top: auto;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -67,13 +61,5 @@
 
 .side_nav_bar a:hover {
     color: ghostwhite;
-}
-
-.side_nav_bar .close_btn {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 28px;
-    padding: 0;
 }
 

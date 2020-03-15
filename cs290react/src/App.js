@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import Linux from "./pages/Linux";
 import Windows from "./pages/Windows";
 import NavBar from "./navbar";
+import SideNav from "./_classes/sidenav";
 import ShoppingList from "./pages/ShoppingList";
 import NotFoundPage from "./pages/PageNotFound";
 
@@ -25,6 +26,7 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <NavBar/>
+
                     <div className="horizontal_rule_top"></div>
 
                     <div className="pageBody">

@@ -14,8 +14,8 @@ header {
 }
 
 .main_Body {
-    clear: both;
-    margin: 5px 10%;
+    float: right;
+    margin: 5px 25%;
 }
 
 .main_Body .logos img {
@@ -25,12 +25,20 @@ header {
 
 .main_Body .update img {
     max-width: 800px;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
-.main_Body .update code p {
-    color: red !important;
+code p {
+    color: darkred !important;
+    background-color: mediumseagreen;
+    width: auto;
+}
+
+.main_Body .qbit img {
+    max-width: 800px;
+    padding-top: 10px;
+    padding-bottom: 80px;
 }
 
 h1 {
@@ -41,7 +49,7 @@ h1 {
 
 h2 {
     color: #3282b8;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 p {
     color: #bbe1fa;
@@ -51,4 +59,8 @@ p {
 p li {
     list-style-type: none;
     text-align: center;
+}
+
+.side {
+    float: left;
 }
